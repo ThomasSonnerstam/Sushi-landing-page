@@ -1,0 +1,208 @@
+/* FONTS  */
+
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+/* BASE STYLES  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    height: 60px;
+}
+
+.start {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */ /* Is this really needed? */
+}
+
+.history {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #FF782E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.types {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #FF7F7F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #D2FFCE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+/* TEXT  */
+
+h1 {
+    font-family: "Liu Jian Mao Cao";
+    margin: 0;
+    margin-top: -10px;
+}
+
+h2 {
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+    align-self: center;
+}
+
+span {
+    color: #BB0028;
+}
+
+/* IMAGES  */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* START PAGE */
+
+    .start-small {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h2-start {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .downArrowStart {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-top: 20%;
+    }
+
+    /* HISTORY PAGE */
+
+    .downArrowHistory {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .history-contentWrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .history-small {
+        width: 100%;
+        height: auto;
+        margin-left: 130px;
+    }
+
+    .history-contentWrapper p {
+        margin-left: 50px;
+    }
+
+    /* TYPES PAGE */
+
+    .downArrowTypes {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .types-contentWrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .types-small {
+        width: 100%;
+        height: auto;
+        margin-left: 130px;
+
+    }
+
+    /* VIDEO PAGE */
+
+    .start-small {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h2-start {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .downArrowStart {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-top: 20%;
+    }
+
+    .youTubeVideo {
+        height: 200px;
+        width: 100%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
