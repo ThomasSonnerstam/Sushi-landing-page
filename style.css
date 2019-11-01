@@ -9,8 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
-
 main {
     display: flex;
     flex-direction: column;
