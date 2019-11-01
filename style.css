@@ -96,111 +96,105 @@ p {
     font-family: "Open Sans Condensed";
 }
 
-/* IMAGES  */
+/* START PAGE */
 
+.start-small {
+    min-width: 375px;
+    max-width: 450px;
+    height: auto;
+    background-size: cover;
+    align-self: center;
+}
 
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) { */ /* This is not nessecary? */
+h1 {
+    font-size: 40px;
+}
 
-    /* START PAGE */
+.downArrow {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-bottom: 3vh;
+}
 
-    .start-small {
-        min-width: 375px;
-        max-width: 450px;
-        height: auto;
-        background-size: cover;
-        align-self: center;
-    }
+/* HISTORY PAGE */
 
-    h1 {
-        font-size: 40px;
-    }
+.history-contentWrapper {
+    width: 100%;
+    overflow: hidden;
+}
 
-    .downArrow {
-        width: 40px;
-        height: 40px;
-        align-self: center;
-        margin-bottom: 3vh;
-    }
+.history-small {
+    width: 100%;
+    height: auto;
+    margin-left: 80px;
+    position: relative;
+}
 
-    /* HISTORY PAGE */
+.history-paragraf {
+    position: absolute;
+    margin-left: 7%;
+}
 
-    .history-contentWrapper {
-        width: 100%;
-        overflow: hidden;
-    }
+.history-contentWrapper p {
+    margin-top: 20px;
+}
 
-    .history-small {
-        width: 100%;
-        height: auto;
-        margin-left: 80px;
-        position: relative;
-    }
+/* TYPES PAGE */
 
-    .history-paragraf {
-        position: absolute;
-        left: 2vh;
-    }
+.types-contentWrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
-    .history-contentWrapper p {
-        margin-top: 20px;
-    }
+.types-paragraf {
+    position: absolute;
+    padding: 10px;
+    margin-left: 20%;
+}
 
-    /* TYPES PAGE */
+.types-small {
+    height: 400px;
+    width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 130px;
+    position: relative;
+}
 
-    .types-contentWrapper {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
+/* VIDEO PAGE */
 
-    .types-paragraf {
-        position: absolute;
-        padding: 10px;
-        margin-left: 20%;
-    }
+h1 {
+    font-size: 40px;
+}
 
-    .types-small {
-        height: 400px;
-        width: 400px;
-        width: 100%;
-        height: auto;
-        margin-left: 130px;
-        position: relative;
-    }
+.h2-start {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    /* VIDEO PAGE */
+.downArrowVideo {
+    width: 65px;
+    height: 65px;
+    align-self: center;
+    margin-top: 20%;
+}
 
-    h1 {
-        font-size: 40px;
-    }
+.youTubeVideo {
+    height: 200px;
+    width: 100%;
+}
 
-    .h2-start {
-        font-size: 32px;
-        font-weight: 300;
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .downArrowVideo {
-        width: 65px;
-        height: 65px;
-        align-self: center;
-        margin-top: 20%;
-    }
-
-    .youTubeVideo {
-        height: 200px;
-        width: 100%;
-    }
-
-    .downArrowVideo {
-        transform: rotate(180deg);
-        width: 40px;
-        height: 40px;
-        align-self: center;
-        margin-bottom: 30px;
-    }
+.downArrowVideo {
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-bottom: 30px;
+}
 
 /* } */
 
@@ -249,7 +243,7 @@ p {
 
     .history-paragraf {
         position: absolute;
-        left: 20%;
+        left: 7%;
     }
 
     .history-contentWrapper p {
@@ -298,9 +292,22 @@ p {
 
     /* HISTORY PAGE */
 
+    .history-small {
+        width: 70%;
+        height: auto;
+        margin-left: 30%;
+        position: relative;
+    }
+
+    .history-paragraf {
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
 
     /* TYPES PAGE */
-    
+
 
 
     /* VIDEO PAGE */
@@ -323,9 +330,16 @@ p {
 
     /* HISTORY PAGE */
 
+    .history-small {
+        width: 50%;
+        height: auto;
+        margin-left: 40%;
+        position: relative;
+    }
+
 
     /* TYPES PAGE */
-    
+
 
 
     /* VIDEO PAGE */
@@ -340,9 +354,22 @@ p {
 
     /* HISTORY PAGE */
 
+    .history-small {
+        width: 40%;
+        height: auto;
+        margin-left: 50%;
+        position: relative;
+    }
+
+    .history-paragraf {
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
 
     /* TYPES PAGE */
-    
+
 
 
     /* VIDEO PAGE */
