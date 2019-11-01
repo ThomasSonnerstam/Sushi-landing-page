@@ -154,12 +154,22 @@ span {
     .types-contentWrapper {
         width: 100%;
         overflow: hidden;
+        position: relative;
+    }
+
+    .types-paragraf {
+        position: absolute;
+        padding: 10px;
+        margin-left: 30%;
     }
 
     .types-small {
+        height: 400px;
+        width: 400px;
         width: 100%;
         height: auto;
         margin-left: 130px;
+        position: relative;
 
     }
 
