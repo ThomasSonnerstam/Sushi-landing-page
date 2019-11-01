@@ -79,6 +79,10 @@ h2 {
     align-self: center;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 span {
     color: #BB0028;
 }
@@ -87,7 +91,7 @@ span {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) { */ /* This is not nessecary? */
 
     /* START PAGE */
 
@@ -158,7 +162,7 @@ span {
     .types-paragraf {
         position: absolute;
         padding: 10px;
-        margin-left: 30%;
+        margin-left: 20%;
     }
 
     .types-small {
@@ -168,7 +172,6 @@ span {
         height: auto;
         margin-left: 130px;
         position: relative;
-
     }
 
     /* VIDEO PAGE */
@@ -203,16 +206,80 @@ span {
         width: 100%;
     }
 
-}
+/* } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+    /* START PAGE */
+
+
+    /* HISTORY PAGE */
+
+
+    /* TYPES PAGE */
+
+
+
+    /* VIDEO PAGE */
+    
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+    /* START PAGE */
+
+
+    /* HISTORY PAGE */
+
+
+    /* TYPES PAGE */
+    
+
+
+    /* VIDEO PAGE */
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    .h2-start {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    /* START PAGE */
+
+
+    /* HISTORY PAGE */
+
+
+    /* TYPES PAGE */
+    
+
+
+    /* VIDEO PAGE */
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+    /* START PAGE */
+
+
+    /* HISTORY PAGE */
+
+
+    /* TYPES PAGE */
+    
+
+
+    /* VIDEO PAGE */
+
+}
