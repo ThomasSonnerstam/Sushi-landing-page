@@ -83,6 +83,10 @@ span {
     color: #BB0028;
 }
 
+p {
+    font-family: "Open Sans Condensed";
+}
+
 /* IMAGES  */
 
 
@@ -92,17 +96,18 @@ span {
     /* START PAGE */
 
     .start-small {
-        width: 100%;
+        min-width: 375px;
+        max-width: 450px;
         height: auto;
         background-size: cover;
-        margin-top: 20px;
+        align-self: center;
     }
 
     h1 {
         font-size: 40px;
     }
 
-    .downArrowStart {
+    .downArrow {
         width: 40px;
         height: 40px;
         align-self: center;
@@ -110,13 +115,6 @@ span {
     }
 
     /* HISTORY PAGE */
-
-    .downArrowHistory {
-        width: 40px;
-        height: 40px;
-        align-self: center;
-        margin-bottom: 3vh;
-    }
 
     .history-contentWrapper {
         width: 100%;
@@ -137,17 +135,9 @@ span {
 
     .history-contentWrapper p {
         margin-top: 20px;
-        /* font-size: 20px; */
     }
 
     /* TYPES PAGE */
-
-    .downArrowTypes {
-        width: 40px;
-        height: 40px;
-        align-self: center;
-        margin-bottom: 30px;
-    }
 
     .types-contentWrapper {
         width: 100%;
@@ -168,17 +158,9 @@ span {
         height: auto;
         margin-left: 130px;
         position: relative;
-
     }
 
     /* VIDEO PAGE */
-
-    .start-small {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        margin-top: 20px;
-    }
 
     h1 {
         font-size: 40px;
@@ -214,7 +196,91 @@ span {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+    /* START */
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .downArrow {
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+
+    .start-small {
+        width: 70%;
+        height: auto;
+        align-self: center;
+    }
+
+    .h2-start {
+        font-size: 46px;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* HISTORY */
+
+    .history-contentWrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .history-small {
+        min-width: 600px;
+        max-width: 600px;
+        height: auto;
+        margin-left: 20vh;
+        position: relative;
+    }
+
+    .history-paragraf {
+        position: absolute;
+        left: 15vh;
+    }
+
+    .history-contentWrapper p {
+        margin-top: 20px;
+    }
+
+
+    /* TYPES */
+
+    .types-contentWrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .types-paragraf {
+        position: absolute;
+        padding: 10px;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    .types-small {
+        width: 100%;
+        height: auto;
+        margin-left: 20vh;
+        position: relative;
+    }
+
+    /* VIDEO */
+
+    .downArrowVideo {
+        transform: rotate(180deg);
+        width: 65px;
+        height: 65px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
