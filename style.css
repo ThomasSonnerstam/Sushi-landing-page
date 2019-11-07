@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -21,43 +25,19 @@ nav {
     height: 60px;
 }
 
-.start {
-    width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .history {
-    width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
     background-color: #FF782E;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
 .types {
-    width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
     background-color: #FF7F7F;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
 .video {
-    width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
     background-color: #D2FFCE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
 a {
@@ -65,30 +45,43 @@ a {
     justify-content: center;
 }
 
+.start,
+.history,
+.types,
+.video {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
 /* TEXT  */
 
 h1 {
     font-family: "Liu Jian Mao Cao";
-    margin: 0;
-    margin-top: -10px;
+    font-size: 40px;
+    margin: -10px 0 0 0;
 }
 
 h2 {
     font-family: "Open Sans Condensed";
     font-weight: 300;
     align-self: center;
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    text-align: center;
 }
 
 p {
+    font-family: "Open Sans Condensed";
     font-size: 1.2em;
 }
 
 span {
     color: #BB0028;
-}
-
-p {
-    font-family: "Open Sans Condensed";
 }
 
 /* START PAGE */
@@ -98,10 +91,6 @@ p {
     height: auto;
     background-size: cover;
     align-self: center;
-}
-
-h1 {
-    font-size: 40px;
 }
 
 .downArrow {
@@ -115,7 +104,6 @@ h1 {
 
 .history-contentWrapper {
     width: 100%;
-    overflow: hidden;
 }
 
 .history-small {
@@ -123,6 +111,7 @@ h1 {
     height: auto;
     margin-left: 80px;
     position: relative;
+    border-radius: 100%;
 }
 
 .history-paragraf {
@@ -138,7 +127,6 @@ h1 {
 
 .types-contentWrapper {
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -166,24 +154,19 @@ h1 {
 .h2-start {
     font-size: 32px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
 }
 
 .iframe-contentWrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 40%;
-    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .iframe-contentWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 50;
-    width: 100%;
-    height: 100%;
-
+    width: 90vw;
+    height: 40vh;
 }
 
 .downArrowVideo {
@@ -193,8 +176,6 @@ h1 {
     align-self: center;
     margin-bottom: 30px;
 }
-
-/* } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) ---*/
 @media only screen and (min-width: 600px) {
@@ -229,7 +210,7 @@ h1 {
 
     .history-contentWrapper {
         width: 100%;
-        overflow: hidden;
+
     }
 
     .history-small {
@@ -248,12 +229,11 @@ h1 {
         margin-top: 20px;
     }
 
-
     /* TYPES */
 
     .types-contentWrapper {
         width: 100%;
-        overflow: hidden;
+
         position: relative;
     }
 
@@ -273,14 +253,9 @@ h1 {
 
     /* VIDEO */
 
-    .iframe-contentWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .iframe-contentWrapper iframe {
-        width: 70%;
+        width: 80vw;
+        height: 45vh;
     }
 
     .downArrowVideo {
@@ -318,7 +293,6 @@ h1 {
         margin-top: 10%;
     }
 
-
     /* TYPES PAGE */
 
     .types-small {
@@ -335,16 +309,19 @@ h1 {
         margin-top: 10%;
     }
 
-    /* VIDEO PAGE */
+    /* VIDEO */
 
-    
+    .iframe-contentWrapper iframe {
+        width: 80vw;
+        height: 55vh;
+    }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) --------------------*/
 @media only screen and (min-width: 992px) {
 
-    .h2-start {
+    h2 {
         font-size: 55px;
     }
 
@@ -381,16 +358,10 @@ h1 {
     }
 
     .types-small {
-        width: 70%;
+        width: 60%;
         height: auto;
         margin-left: 40%;
         position: relative;
-    }
-
-    /* VIDEO PAGE */
-
-    .iframe-contentWrapper {
-        padding-bottom: 35%;
     }
 
 }
@@ -405,7 +376,6 @@ h1 {
         height: auto;
         align-self: center;
     }
-
 
     /* HISTORY PAGE */
 
@@ -422,7 +392,6 @@ h1 {
         margin-top: 5%;
     }
 
-
     /* TYPES PAGE */
 
     .types-paragraf {
@@ -433,14 +402,16 @@ h1 {
     }
 
     .types-small {
-        width: 55%;
+        width: 50%;
         height: auto;
         margin-left: 40%;
         position: relative;
     }
 
+    /* VIDEO */
 
-
-    /* VIDEO PAGE */
-
+    .iframe-contentWrapper iframe {
+        width: 65vw;
+        height: 55vh;
+    }
 }
